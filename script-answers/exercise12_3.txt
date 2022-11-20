@@ -1,0 +1,45 @@
+Script started on Sat Nov 12 18:38:17 2022
+[?1034hbash-3.2$ docker container[K[K[K[K[K[K[K[K[Kstart [K[K[K[K[K[Kls
+docker: 'ls' is not a docker command.
+See 'docker --help'
+bash-3.2$ docker container ls
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+bash-3.2$ docker container ls[K[Kls -a
+CONTAINER ID   IMAGE                   COMMAND                  CREATED             STATUS                         PORTS     NAMES
+8701d8cc775c   ubuntu                  "bash"                   30 minutes ago      Exited (0) 2 minutes ago                 clever_cori
+ff3961356035   hello-world             "/hello"                 59 minutes ago      Exited (0) 59 minutes ago                optimistic_proskuriakova
+08c8db8baeee   hello-world             "/hello"                 About an hour ago   Exited (0) About an hour ago             thirsty_murdock
+6502fe4110a7   hello-world             "/hello"                 About an hour ago   Exited (0) About an hour ago             strange_chaum
+5962efadb335   hello-world             "/hello"                 About an hour ago   Exited (0) About an hour ago             focused_kepler
+ad55a3155c2b   mysql                   "docker-entrypoint.s…"   8 months ago        Exited (137) 7 months ago                mysql
+d9c9ac5bd3c0   nginx:latest            "/docker-entrypoint.…"   8 months ago        Exited (137) 8 months ago                nginx-prod
+ce3e559fd513   nestjs-api-prod:1.0.0   "docker-entrypoint.s…"   8 months ago        Exited (137) 8 months ago                nestjs_api_prod
+11a5d9ca3f69   react-app-prod:1.0.0    "docker-entrypoint.s…"   8 months ago        Exited (1) 8 months ago                  react_app_prod
+a3a72d181834   mysql                   "docker-entrypoint.s…"   8 months ago        Exited (0) 8 months ago                  car-app_mysqldb_1
+f1eed8499ea1   mysql                   "docker-entrypoint.s…"   8 months ago        Exited (1) 8 months ago                  zen_cartwright
+af5eb6246b9b   postgres                "docker-entrypoint.s…"   8 months ago        Exited (0) 16 minutes ago                mypostgres
+e68e876d5d6b   react-travel-advisor    "nginx -g 'daemon of…"   8 months ago        Exited (0) 8 months ago                  react-travel-advisor
+998c4d3ee1ba   phpmyadmin/phpmyadmin   "/docker-entrypoint.…"   8 months ago        Exited (0) 16 minutes ago                pma
+97346b012552   mysql:5.7               "docker-entrypoint.s…"   8 months ago        Exited (0) 8 months ago                  db2
+bb5340908ea3   phpmyadmin/phpmyadmin   "/docker-entrypoint.…"   8 months ago        Exited (0) 8 months ago                  compose-php-phpmyadmin
+8d36bd2724aa   phpmyadmin/phpmyadmin   "/docker-entrypoint.…"   8 months ago        Exited (0) 8 months ago                  phpmyadmin
+5de697d36ca7   docker_demo_web         "bash -c 'python mys…"   8 months ago        Exited (0) 8 months ago                  compose-django-demo
+b127b61cc696   mysql:5.7               "docker-entrypoint.s…"   8 months ago        Exited (1) 8 months ago                  compose-mysql
+80b563aa31b5   django-demo             "/bin/sh -c 'python …"   8 months ago        Exited (137) 8 months ago                django-demo
+bash-3.2$ docker container[K[K[K[K[K[K[K[K[Kstart -i 8701d8cc775c
+[?2004h]0;root@8701d8cc775c: /root@8701d8cc775c:/# cd src   usr\src\app
+[?2004lbash: cd: usrsrcapp: No such file or directory
+[?2004h]0;root@8701d8cc775c: /root@8701d8cc775c:/# cd usr\src\app        
+[?2004l[?2004h]0;root@8701d8cc775c: /usrroot@8701d8cc775c:/usr# cd src
+[?2004l[?2004h]0;root@8701d8cc775c: /usr/srcroot@8701d8cc775c:/usr/src# s cd app
+[?2004l[?2004h]0;root@8701d8cc775c: /usr/src/approot@8701d8cc775c:/usr/src/app# nano index.js 
+[?2004l[?2004h[?1049h[22;0;0t[1;14r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[12;60H(B[0;7m[ Reading... ](B[m[12;59H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 6.2 [49bindex.js [58b [1;131H(B[m[13d(B[0;7m^G(B[m Help[13;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[13;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[13;113H(B[0;7mM-A(B[m Set Mark[14d(B[0;7m^X(B[m Exit[14;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[14;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[14;113H(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;74H(B[0;7m*[12d(B[m[K[1;131H[2dconsole.log((B[0;1m[35m'Hello World'[39m(B[m)[?12l[?25h[?25l[?12l[?25h;[?25l[?12l[?25h [?25l[3d[?12l[?25h[?25l[12d(B[0;7mSave modified buffer? [109b [13;1H Y(B[m Yes[K[14d(B[0;7m N(B[m No  [14;18H(B[0;7mC(B[m Cancel[K[12;23H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[13d(B[0;7m^G(B[m Help[13;34H(B[0;7mM-D(B[m DOS Format[13;67H(B[0;7mM-A(B[m Append[13;100H(B[0;7mM-B(B[m Backup File[14d(B[0;7m^C(B[m Cancel[17G [8b[14;34H(B[0;7mM-M(B[m Mac Format[14;67H(B[0;7mM-P(B[m Prepend[14;100H(B[0;7m^T(B[m Browse[12d(B[0;7mFile Name to Write: index.js(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[12;59H[1K (B[0;7m[ Writing... ](B[m[K[1;74H(B[0;7m [131G(B[m[12;58H(B[0;7m[ Wrote 2 lines ](B[m[J[14d[?12l[?25h[14;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@8701d8cc775c: /usr/src/approot@8701d8cc775c:/usr/src/app# touch index.js
+[?2004l[?2004h]0;root@8701d8cc775c: /usr/src/approot@8701d8cc775c:/usr/src/app# ls
+[?2004lindex.js
+[?2004h]0;root@8701d8cc775c: /usr/src/approot@8701d8cc775c:/usr/src/app# nano index.js
+[?2004l[?2004h[?1049h[22;0;0t[1;14r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[12;60H(B[0;7m[ Reading... ](B[m[12;59H(B[0;7m[ Read 2 lines ](B[m[H(B[0;7m  GNU nano 6.2 [49bindex.js [58b [1;131H(B[m[13d(B[0;7m^G(B[m Help[13;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[13;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[13;113H(B[0;7mM-A(B[m Set Mark[14d(B[0;7m^X(B[m Exit[14;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[14;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[14;113H(B[0;7mM-6(B[m Copy[2dconsole.log((B[0;1m[35m'Hello World'[39m(B[m)[?12l[?25h[?25l[12d[J[14d[?12l[?25h[14;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@8701d8cc775c: /usr/src/approot@8701d8cc775c:/usr/src/app# exit
+[?2004lexit
+bash-3.2$ exit
+exit
+
+Script done on Sat Nov 12 18:40:45 2022

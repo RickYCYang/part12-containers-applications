@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Todo /> Render completed Todo 1`] = `
+<div>
+  <div
+    style="display: flex; justify-content: space-between; max-width: 70%; margin: auto;"
+  >
+    <span>
+      Learn about container Aris
+    </span>
+    <span>
+      This todo is done
+    </span>
+    <span>
+      <button>
+         Delete 
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<Todo /> Render not completed Todo 1`] = `
+<div>
+  <div
+    style="display: flex; justify-content: space-between; max-width: 70%; margin: auto;"
+  >
+    <span>
+      Learn about container Aris
+    </span>
+    <span>
+      This todo is not done
+    </span>
+    <span>
+      <button>
+         Delete 
+      </button>
+      <button>
+         Set as done 
+      </button>
+    </span>
+  </div>
+</div>
+`;

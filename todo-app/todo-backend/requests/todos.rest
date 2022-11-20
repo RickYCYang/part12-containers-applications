@@ -1,0 +1,24 @@
+### get todo list
+GET http://localhost:3000/todos
+
+### get todo by id
+GET http://localhost:3000/todos/63710b280d13f27b062a6a95
+
+
+### update a todo by id
+PUT http://localhost:3000/todos/63710b280d13f27b062a6a95
+Content-Type: application/json
+
+{
+  "text": "Learn about container 2",
+  "done": true
+}
+
+### post a new todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "text": "Learn about container Tony"
+}
+

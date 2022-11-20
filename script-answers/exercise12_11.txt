@@ -1,0 +1,27 @@
+Script started on Fri Nov 18 02:00:10 2022
+[?1034hbash-3.2$ ex[K[Kdocker container exec [K[K[K[K[Kls
+CONTAINER ID   IMAGE     COMMAND                  CREATED             STATUS          PORTS                                         NAMES
+7bb11055ce10   redis     "docker-entrypoint.s…"   About an hour ago   Up 59 minutes   0.0.0.0:6379->6379/tcp, :::6379->6379/tcp     todo-backend_redis_1
+95b7ad3ba949   nginx     "/docker-entrypoint.…"   2 hours ago         Up 2 hours      0.0.0.0:8080->80/tcp, :::8080->80/tcp         flamboyant_cannon
+4d7e24356364   mongo     "docker-entrypoint.s…"   2 days ago          Up 59 minutes   0.0.0.0:3456->27017/tcp, :::3456->27017/tcp   todo-backend_mongo_1
+bash-3.2$ docker container exec -it 7bb11055ce10 bash
+[?2004hroot@7bb11055ce10:/data# [Kroot@7bb11055ce10:/data# redis-cli [7mKEYS *[27mKEYS *
+[?2004l(empty array)
+[?2004hroot@7bb11055ce10:/data# redis-cli KEYS * a*d*d*e*d*_**
+[?2004l1) "added_todos"
+[?2004hroot@7bb11055ce10:/data# ra edis-cli GET [7madded_todos[27madded_todos
+[?2004l"3"
+[?2004hroot@7bb11055ce10:/data# redis-cli SET [7m9001[27m      [7madded_todos[27madded_todos [7m9001[27m9001
+[?2004lOK
+[?2004hroot@7bb11055ce10:/data# redis-cli SET added_todos 9001[5PGET added_todos
+[?2004l"9001"
+[?2004hroot@7bb11055ce10:/data# redis-cli DEL [7madded_todos[27madded_todos
+[?2004l(integer) 1
+[?2004hroot@7bb11055ce10:/data# redis-cli DEL added_todosGET added_todosSET added_todos 9001[5PGET added_todos[3PKEYS added_*
+[?2004l(empty array)
+[?2004hroot@7bb11055ce10:/data# exit
+[?2004lexit
+bash-3.2$ exit
+exit
+
+Script done on Fri Nov 18 02:08:07 2022
